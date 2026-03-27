@@ -128,7 +128,7 @@ class FederationClient {
   String? _userId;
   String? _authToken;
 
-  FederationClient({bool allowSelfSignedCert = false})
+  FederationClient({bool allowSelfSignedCert = false}) // add a feature to set this flag, or set it to true here, for local hosting
       : _dio = Dio(BaseOptions(
           connectTimeout: const Duration(seconds: 10),
           receiveTimeout: const Duration(seconds: 30),
